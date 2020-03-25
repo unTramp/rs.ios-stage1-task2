@@ -72,7 +72,7 @@
     };
     for (NSString* word in wordsArrayFromInput) {
         NSString* updatedWord = newWord(word);
-        if (![updatedWord isEqual:@"0"] && ![updatedWord isEqual:@"0\n"]) {
+        if (![updatedWord isEqualToString:@"0"] && ![updatedWord isEqualToString:@"0\n"]) {
             [updatedWordArray addObject:updatedWord];
         }
     }
